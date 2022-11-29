@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 load_dotenv()
 from googleapiclient.discovery import build
 
-apiKey = "AIzaSyCA_ykbAgb6upElx0UEcZUtn8HsEgdk7IM"
+apiKey = os.getenv("API_KEY")
 youtube = build("youtube", "v3", developerKey=apiKey)
 
 
