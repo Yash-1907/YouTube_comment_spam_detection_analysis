@@ -51,11 +51,12 @@ Extract all the comments of a YouTube video and predict the Spam Comments using 
 
 - Sentiment analysis was performed on this dataset. Word Cloud was formed and displayed.
 
-![Untitled](YouTube%20Comments%20Spam%20Detection%20and%20Sentimental%20An%2074558296ab0f43c5ab995da0615c55d9/Untitled.png)
+![image](https://user-images.githubusercontent.com/76249576/204635878-a007d626-ea5f-44c2-a0f7-077f978c57b5.png)
+
 
 - Text cleaning was performed like removing stop words, lemmatization, removing all the words having length less than 2, etc.,a list of updated stop words can also be custom added. Then again word cloud was formed and displayed for this cleaned data.
 
-![Untitled](YouTube%20Comments%20Spam%20Detection%20and%20Sentimental%20An%2074558296ab0f43c5ab995da0615c55d9/Untitled%201.png)
+![image](https://user-images.githubusercontent.com/76249576/204635925-5b8a0dc9-f8ac-4ece-81ea-1541a30b7b55.png)
 
 - Now for rating the comments as **negative**, **positive**, and **neutral** “VADER” scores are used.
 - Finally, total counts of **negative**, **positive**, and **neutral comments** were calculated to gain insight if the viewers liked the content of the user or not. If **negative** counts are greater than **positive** counts, then simply the content of the user is highly disliked by the audience.
@@ -66,14 +67,14 @@ Extract all the comments of a YouTube video and predict the Spam Comments using 
 - Precision, recall, and f-1 scores of the SVM model were found to be**556, 0.513, and 0.533** respectively. If the user wants to analyze as many as possible non-spam comments and does not want to miss any important non-spam comments then he has to need a model with a very high precision which can be obtained by increasing the threshold value of the classifier.
 - The confusion matrix obtained for the SVM classifier model looks like this-
 
-![Untitled](YouTube%20Comments%20Spam%20Detection%20and%20Sentimental%20An%2074558296ab0f43c5ab995da0615c55d9/Untitled%202.png)
+![image](https://user-images.githubusercontent.com/76249576/204635970-df854ce9-655c-4be6-b802-7ceb30279520.png)
 
 - A larger dataset will result in better performance or accuracy which means the model is suffering from high bias.
 - We are trying to fit non-linear data into a linear model which is resulting into a lesser accuracy.
 - The dataset which we have used has very high number of spam comments. This can be reduced if we use a dataset having almost equal amount of spam and non-spam comments.
 - In the final results, negative-rated, positive-rated, neutral-rated comments classified on the basis of VADER score are equal to 481, 1655, and 2714 respectively.
 
-![Untitled](YouTube%20Comments%20Spam%20Detection%20and%20Sentimental%20An%2074558296ab0f43c5ab995da0615c55d9/Untitled%203.png)
+![image](https://user-images.githubusercontent.com/76249576/204636035-83c2c807-a712-4f55-9bf3-70879df4d455.png)
 
 # References
 
